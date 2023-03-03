@@ -18,12 +18,38 @@ html{
 4.Kiểu dáng
 */
 #main {
-
+/*Common*/
 }
 
 .text-white{
     color: #fff;
+
 }
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.3333% ;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*Common*/
 #header {
     height: 50px;
     background-color: black;
@@ -172,14 +198,6 @@ html{
     line-height: 1.4;
 }
 
-#content .member-item{
-    float:left ;
-    width: 33.3333%;
-    text-align: center;
-
-
-}
-
 #content .member-list{
     margin-top: 48px;
     overflow: hidden;
@@ -237,15 +255,8 @@ html{
 
 /*places*/
 .places-list{
-    margin: 32px -7px 0 -7px;
-    padding-bottom: 48px;
-
-}
-
-.places-item{
-    float: left;
-    width: 33.3333%;
-    padding: 0px 7px;
+    margin-top: 32px ;
+    margin-bottom : 48px;
 
 }
 
