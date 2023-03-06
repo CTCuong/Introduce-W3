@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 
 </head>
@@ -19,7 +20,7 @@
                 <li><a href="#tour">Tuor</a></li>
                 <li><a href="#contract">Contract</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -34,6 +35,9 @@
             <!--Begin: Seaech button-->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!--End: Seaech button-->
 
@@ -230,6 +234,38 @@
         Ipad : >=740px to < 1024px ;
         mobile : < 740px ;
         -->
+        <div class="mobile">
+            
+        </div>
+
+        <script>
+            var header = document.getElementById('header');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+
+            mobileMenu.onclick = function() {
+                var isClosed = header.clientHeight === headerHeight ;
+                if (isClosed) {
+                    header.style.height = 'auto';
+                } else {
+                    header.style.height = null;
+
+                }
+            }
+            // tu dong dong kho chon menu
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+            for(var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function() {
+                    header.style.height = null ;
+                }
+            }
+
+            
+        </script>
+
+
 
 
 </body>

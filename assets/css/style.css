@@ -81,6 +81,7 @@ html{
     right: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
 
 }
 
@@ -141,6 +142,8 @@ html{
     font-size: 13px;
     line-height: 50px;
 }
+
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 18px;
@@ -148,13 +151,21 @@ html{
    
 
 }
-
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0px 21px;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+#header .mobile-menu-btn .menu-icon {
+    color: #000000;
+}
+
 #header .search-btn:hover{
+    cursor: pointer;
     background-color: rgb(26, 184, 184);
     box-shadow: 0 0 10px rgb(193, 182, 182);
 }
