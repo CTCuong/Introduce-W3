@@ -160,7 +160,8 @@ html{
 #header .mobile-menu-btn:hover {
     background-color: #ccc;
 }
-#header .mobile-menu-btn .menu-icon {
+
+#header .mobile-menu-btn:hover .menu-icon {
     color: #000000;
 }
 
@@ -344,6 +345,7 @@ html{
     cursor: pointer;
     opacity: 0.6;
     background-color: #757575;
+
 }
 
 

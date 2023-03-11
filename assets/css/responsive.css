@@ -8,3 +8,9 @@
     }
 
 }
+
+@media (min-width :741px) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+}
