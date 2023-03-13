@@ -29,6 +29,25 @@
         padding : 5px 41px
     }
 
+   #content .member-item {
+    width: 100%;
+    margin-top: 25px;
+   }
+
+   #content .member-img {
+    width: 60%;
+   }
+
+   .s-full-width,
+   .s-col-full {
+    width: 100%;
+   }
+
+   .contract-form {
+    margin-top: 16px;
+   }
+
+
 }
 
 @media (min-width :741px) {
