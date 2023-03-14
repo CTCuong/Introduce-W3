@@ -346,6 +346,8 @@ html{
     margin-top: 15px;
     border: none;
     text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
     
 }
 
@@ -482,6 +484,14 @@ html{
    margin-top: 48px; 
 }
 
+.contract-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contract-info a:hover {
+    opacity: 5;
+}
 .contract-info {
     font-size: 18px;
     line-height: 1.5;
